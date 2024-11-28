@@ -5,12 +5,12 @@ class Barajaes {
     private $cartas = [];
 
     public function __construct() {
-        $palos = ['bastos', 'oros', 'copas', 'espadas'];
-        foreach ($palos as $palo) {
+        $palo = ['bastos', 'oros', 'copas', 'espadas'];
+        foreach ($palo as $palo) {
             for ($i = 1; $i <= 12; $i++) {
                 $this->cartas[] = [
                     'nombre' => ucfirst(string: $palo) . " $i", 
-                    'imagen' => "{$palo}_{$i}.png"     
+                    'imagen' => "{$palo}_{$i}.jpg"     
                 ];
             }
         }

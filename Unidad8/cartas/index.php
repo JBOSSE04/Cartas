@@ -1,7 +1,7 @@
 <?php
 require_once 'Views/layout/header.php';
 require_once 'autoloader.php';
-require_once 'config/config.php';
+require 'config/config.php';
 use Controllers\FrontController;
 
 

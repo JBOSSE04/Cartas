@@ -32,11 +32,13 @@ class BarajaController {
     }
 
     public function repartirCartas() {
-        $jugadores = $_GET['jugadores'] ?? 4; // Número de jugadores por defecto
+        $jugadores = $_GET['jugadores'] ?? 4; // Numero de jugadores
         $baraja = new Barajaes();
-        $reparto = $baraja->repartir($jugadores, 3); // Cada jugador recibe 3 cartas
+        $reparto = $baraja->repartir($jugadores, 3); // recibe 3 cartas
         $page = new Pages();
         $page->render('repartirCartas', ['reparto' => $reparto]);
     }
 }
+
+
 ?>
